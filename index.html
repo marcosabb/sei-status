@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Monitor SEI — processos</title>
+<style>
+  :root {
+    --fundo: #f6f7f9;
+    --cartao: #ffffff;
+    --borda: #e3e6ea;
+    --texto: #1a1f24;
+    --suave: #5c6670;
+    --apagado: #8b949e;
+    --destaque: #0b6e4f;
+    --destaque-fundo: #e7f4ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #14181c;
+      --cartao: #1c2127;
+      --borda: #2c333b;
+      --texto: #e6e9ec;
+      --suave: #9aa4ae;
+      --apagado: #6e7881;
+      --destaque: #4cc297;
+      --destaque-fundo: #1a2f28;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+  header h1 { margin: 0; font-size: 1.35rem; }
+  header p { margin: .25rem 0 0; color: var(--suave); font-size: .9rem; }
+  ol { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .75rem; }
+  .processo {
+    background: var(--cartao);
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    padding: .9rem 1.1rem;
+  }
+  .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .processo h2 { margin: 0; font-size: 1rem; font-weight: 600; }
+  .processo h2 .titulo { color: inherit; text-decoration: none; }
+  .processo h2 .titulo:hover { text-decoration: underline; }
+  .abrir {
+    color: var(--destaque);
+    text-decoration: none;
+    margin-left: .5rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .abrir:hover { text-decoration: underline; }
+  .quando { flex-shrink: 0; font-size: .85rem; color: var(--suave); }
+  .quando .relativo {
+    color: var(--destaque);
+    background: var(--destaque-fundo);
+    border-radius: 99px;
+    padding: .1rem .5rem;
+    margin-left: .35rem;
+    font-size: .78rem;
+  }
+  .quando .relativo:empty { display: none; }
+  .numero {
+    margin: .1rem 0 .4rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .8rem;
+    color: var(--apagado);
+  }
+  .andamento { margin: 0; font-size: .9rem; }
+  .andamento .unidade { color: var(--suave); }
+  .pendente .andamento { color: var(--apagado); font-style: italic; }
+  footer { margin-top: 2rem; color: var(--apagado); font-size: .8rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Processos monitorados — SEI/DF</h1>
+    <p>12 processos · página atualizada em 20/08/2026, 15:19 (horário de Brasília)</p>
+  </header>
+  <ol>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?rI6FJOxkCXKop4u_dkrGVjqAguxn5p61su2d0lGGhyVHZ0-i81na1piV3kFinja3MsWGoRK46J3HcG6qoZ8MAioUkaOlVcMf-OhnWKBLlK47J3uObr2MmJuLpuNMC8o3" target="_blank" rel="noopener">Licenciamento Ambiental Simplificado — LAS (IBRAM)</a></h2>
+          <div class="quando">
+            <span class="data">20/08/2026 14:38</span>
+            <span class="relativo" data-epoch="1787247480000"></span>
+          </div>
+        </div>
+        <p class="numero">00391-00013205/2017-19 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?rI6FJOxkCXKop4u_dkrGVjqAguxn5p61su2d0lGGhyVHZ0-i81na1piV3kFinja3MsWGoRK46J3HcG6qoZ8MAioUkaOlVcMf-OhnWKBLlK47J3uObr2MmJuLpuNMC8o3" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Conclusão do processo na unidade <span class="unidade">— IBRAM/PRESI/SULAM/ADIS</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdgg3d9Bt-aqKl_MeekBW30KQEHrJnWQaYzW4-sGl5G_y" target="_blank" rel="noopener">Projeto urbanístico / estudo preliminar (SEDUH)</a></h2>
+          <div class="quando">
+            <span class="data">19/08/2026 09:29</span>
+            <span class="relativo" data-epoch="1787142540000"></span>
+          </div>
+        </div>
+        <p class="numero">00392-00001984/2025-91 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdgg3d9Bt-aqKl_MeekBW30KQEHrJnWQaYzW4-sGl5G_y" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Conclusão do processo na unidade <span class="unidade">— SEDUH/SEADUH/SUPAR/UPAR/COPAG</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?K0j1raeU3JSV-afv_r6a1TjtzwUsdrrwy7CGLcv8BRxvkwMReIl_bzNNfxZnA7OUnUDxJGg74Hqv2TFaAui3Dh5VVtes7fhGoWzY3EZY9gGxm-VpuAE-VjoHjYLVegoe" target="_blank" rel="noopener">Processo matriz — Edital 01/2023 (CODHAB)</a></h2>
+          <div class="quando">
+            <span class="data">18/08/2026 15:44</span>
+            <span class="relativo" data-epoch="1787078640000"></span>
+          </div>
+        </div>
+        <p class="numero">00392-00008138/2021-79 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?K0j1raeU3JSV-afv_r6a1TjtzwUsdrrwy7CGLcv8BRxvkwMReIl_bzNNfxZnA7OUnUDxJGg74Hqv2TFaAui3Dh5VVtes7fhGoWzY3EZY9gGxm-VpuAE-VjoHjYLVegoe" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Conclusão do processo na unidade <span class="unidade">— CODHAB/PRESI/CONT</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdpHu1EdnkhkhVEZ7Pt8wBu8_0V-hugdZsk8Y2K7f4ON6" target="_blank" rel="noopener">Ligações temporárias de água e energia (CODHAB)</a></h2>
+          <div class="quando">
+            <span class="data">12/08/2026 15:32</span>
+            <span class="relativo" data-epoch="1786559520000"></span>
+          </div>
+        </div>
+        <p class="numero">00392-00012039/2026-04 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdpHu1EdnkhkhVEZ7Pt8wBu8_0V-hugdZsk8Y2K7f4ON6" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Envio de correspondência eletrônica 211147538 (Correspondência Eletrônica) <span class="unidade">— CAESB/DC/CAC/CACC/CACCL</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdv3GhwX43ujJtaLeWQAntsAQcKbSxyXD2EZQo3OiZbdp" target="_blank" rel="noopener">Servidão p/ dissipação da drenagem (TERRACAP)</a></h2>
+          <div class="quando">
+            <span class="data">11/08/2026 14:09</span>
+            <span class="relativo" data-epoch="1786468140000"></span>
+          </div>
+        </div>
+        <p class="numero">00392-00013976/2026-79 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdv3GhwX43ujJtaLeWQAntsAQcKbSxyXD2EZQo3OiZbdp" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Conclusão do processo na unidade <span class="unidade">— CODHAB/PRESI/DIMOB/GEPAT</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdqhwNRcds5dpdzF-cbPo4ZcAUfBzownIP5kZLREa43o2" target="_blank" rel="noopener">Ajuste da DIUPE 14/2026 ao Novo PDOT (SEDUH)</a></h2>
+          <div class="quando">
+            <span class="data">31/07/2026 15:08</span>
+            <span class="relativo" data-epoch="1785521280000"></span>
+          </div>
+        </div>
+        <p class="numero">00392-00011826/2026-21 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdqhwNRcds5dpdzF-cbPo4ZcAUfBzownIP5kZLREa43o2" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Processo recebido na unidade <span class="unidade">— CODHAB/PRESI/DIMOB</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdmKZ2rtOWoa8NFgZNdRa9PgBwEdaDl0jvzeta3kinnFM" target="_blank" rel="noopener">Diretrizes urbanísticas — DIUPE 14/2026 (SEDUH)</a></h2>
+          <div class="quando">
+            <span class="data">30/07/2026 09:15</span>
+            <span class="relativo" data-epoch="1785413700000"></span>
+          </div>
+        </div>
+        <p class="numero">00390-00002228/2026-17 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdmKZ2rtOWoa8NFgZNdRa9PgBwEdaDl0jvzeta3kinnFM" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Assinado Documento 208489376 (Termo de Correção de Documento) <span class="unidade">— SEDUH/SUPLAN/UPLAN/CODIR</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdrMd5VErxxUiL3GVCCDB_7gV_wMZewX-gD85B0QzuzwG" target="_blank" rel="noopener">Consultas a concessionárias — pendente Neoenergia (SEDUH)</a></h2>
+          <div class="quando">
+            <span class="data">25/05/2026 10:10</span>
+            <span class="relativo" data-epoch="1779714600000"></span>
+          </div>
+        </div>
+        <p class="numero">00390-00009412/2025-15 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdrMd5VErxxUiL3GVCCDB_7gV_wMZewX-gD85B0QzuzwG" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Conclusão do processo na unidade <span class="unidade">— SEDUH/SEADUH/SUPAR/COAP</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdpiCcKojZahFu2ccZpjE0J-_Gdf9M5RY5EBbPyFCvO9Z" target="_blank" rel="noopener">Autorização de Supressão de Vegetação — ASV (IBRAM)</a></h2>
+          <div class="quando">
+            <span class="data">07/05/2026 14:04</span>
+            <span class="relativo" data-epoch="1778173440000"></span>
+          </div>
+        </div>
+        <p class="numero">00391-00009909/2025-05 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdpiCcKojZahFu2ccZpjE0J-_Gdf9M5RY5EBbPyFCvO9Z" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Processo recebido na unidade <span class="unidade">— IBRAM/PRESI/SULAM/ASSESP</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdumNDKkQSLpny597YwJx3i1dyhrQMSfWtNAS_gEMNQz-" target="_blank" rel="noopener">Supressão de vegetação — 2º processo (IBRAM)</a></h2>
+          <div class="quando">
+            <span class="data">07/05/2026 13:16</span>
+            <span class="relativo" data-epoch="1778170560000"></span>
+          </div>
+        </div>
+        <p class="numero">00391-00013016/2025-56 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdumNDKkQSLpny597YwJx3i1dyhrQMSfWtNAS_gEMNQz-" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Processo recebido na unidade <span class="unidade">— IBRAM/PRESI/SULAM/ASSESP</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdg4vG0JZz7F99kG77s7uFiUxg25vXKG7JOGK9LPT4Qby" target="_blank" rel="noopener">Análise da topografia (SEDUH)</a></h2>
+          <div class="quando">
+            <span class="data">27/04/2026 15:59</span>
+            <span class="relativo" data-epoch="1777316340000"></span>
+          </div>
+        </div>
+        <p class="numero">00390-00007052/2025-17 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?aMIbReXoS9tQhnk8C9g4E2TBfwZbpu7bIhoUkJuZQ9kioHFUkpbsjXddqfif1At_cfQEgFN_9c_GYxkJ9reZdg4vG0JZz7F99kG77s7uFiUxg25vXKG7JOGK9LPT4Qby" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Conclusão do processo na unidade <span class="unidade">— SEDUH/SEADUH/SUPAR/UPAR/COPAG</span></p>
+      </li>
+      <li class="processo">
+        <div class="cabecalho">
+          <h2><a class="titulo" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?K0j1raeU3JSV-afv_r6a1TjtzwUsdrrwy7CGLcv8BRxvkwMReIl_bzNNfxZnA7OUnUDxJGg74Hqv2TFaAui3DsTOi1AjKlwmuzzlj8uEJCnBR9Q9_IajNWChl5Owiq_6" target="_blank" rel="noopener">Termo de Concessão de Uso (TERRACAP)</a></h2>
+          <div class="quando">
+            <span class="data">13/04/2026 10:33</span>
+            <span class="relativo" data-epoch="1776087180000"></span>
+          </div>
+        </div>
+        <p class="numero">00392-00009482/2019-61 <a class="abrir" href="https://sei.df.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?K0j1raeU3JSV-afv_r6a1TjtzwUsdrrwy7CGLcv8BRxvkwMReIl_bzNNfxZnA7OUnUDxJGg74Hqv2TFaAui3DsTOi1AjKlwmuzzlj8uEJCnBR9Q9_IajNWChl5Owiq_6" target="_blank" rel="noopener">abrir no SEI ↗</a></p>
+        <p class="andamento">Conclusão do processo na unidade <span class="unidade">— CODHAB/PRESI/DIMOB/GEPAT/NUPAT</span></p>
+      </li>
+  </ol>
+  <footer>
+    <p>Ao lado de cada processo, a data do último andamento registrado no SEI.
+    Atualizado automaticamente algumas vezes por dia, em dias úteis.</p>
+  </footer>
+</main>
+<script>
+  // "ha X" calculado no navegador, para a etiqueta nao envelhecer entre uma
+  // atualizacao e outra da pagina.
+  for (const el of document.querySelectorAll("[data-epoch]")) {
+    const min = Math.round((Date.now() - Number(el.dataset.epoch)) / 60000);
+    if (!Number.isFinite(min) || min < 0) continue;
+    if (min < 60) el.textContent = "há " + min + " min";
+    else if (min < 48 * 60) el.textContent = "há " + Math.round(min / 60) + " h";
+    else el.textContent = "há " + Math.round(min / 1440) + " dias";
+  }
+</script>
+</body>
+</html>
